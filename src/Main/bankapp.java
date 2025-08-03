@@ -57,7 +57,8 @@ public class bankapp {
             case 3:
                 break;
             default:
-                
+                System.out.println("Invalid! Section.");
+                System.out.println("Try again.");
         }
     }
 }
