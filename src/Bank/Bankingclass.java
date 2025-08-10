@@ -4,10 +4,26 @@ package Bank;
 
 public class Bankingclass {
    
-    int accountNo = 20013, pin = 456789;
-    String name;
-    float initializeBalance = 0;
+    private int accountNo, pin;
+    private float initializeBalance;
     
+    
+    public void setAccountNo(int accountNo){
+        this.accountNo = accountNo;
+    }
+    
+    public int getAccountNo(){
+        return accountNo;
+    }
+    
+    public void setPin(int pin){
+        this.pin = pin;
+    }
+    
+    public int getPin(){
+        return pin;
+    }
+   
     public boolean validateAccount(int accn, int pi){
         
         if(accn == accountNo && pi == pin){
@@ -17,6 +33,8 @@ public class Bankingclass {
         }
     }
     
+    
+ 
     public int listAccount(){
         return accountNo;
     }
